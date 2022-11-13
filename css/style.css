@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-Bold.woff");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #222429;
+}
+.circle {
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    border: 3px solid #81818d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../svg/clock-dash.svg');
+    background-size: cover;
+    background-position: center;
+    background-color: #222429;
+    color: white;
+    box-shadow: -2px -2px 4px #ffffff17, 4px 4px 4px rgba(0,0,0,0.3);
+}
+
+ .min, .sec, .dots, .dots2, .m-sec {
+    font-size: 30px;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+ }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.buttons__start, .buttons__stop, 
+.buttons__reset, .buttons__new-lap {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #fb991b;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: #fb991b;
+    color: white;
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    margin: 0 10px 10px 10px;
+    font-family: Montserrat;
+}
+
+.buttons__start:active, .buttons__stop:active, 
+.buttons__reset:active, .buttons__new-lap:active {
+    box-shadow: inset 4px 4px 4px rgba(0,0,0,0.5), inset -4px -4px 4px #ffffff17;
+}
+
+.lap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.lap__block {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.lap-results {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #81818d;
+    text-shadow: -1px -1px 2px #ffffff17, 4px 4px 4px rgba(0,0,0,0.3);
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #2b2b35;
+    margin-top: 3px;
+}
